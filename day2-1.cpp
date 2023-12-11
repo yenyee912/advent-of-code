@@ -39,12 +39,10 @@ bool isPossible(string draw_res)
   string num;
   char ch;
 
-  vector <vector <int>> set;
-
   bool isPossible = true;
   for (int i = 0; i < games.size(); i++)
   {
-    vector<int> draw_qty = {0, 0, 0}; // r,b,g
+    int draw_qty[] = {0, 0, 0}; // r,b,g
 
     for (int j = 0; j < games[i].length(); j++)
     {
